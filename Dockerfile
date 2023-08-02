@@ -1,10 +1,10 @@
 FROM python:3.7-alpine
-LABEL author=KHAJA
-LABEL blog=directdevops.blog
+LABEL author=DEVOPS
+LABEL blog=devopseasy@gmail.com
 ARG HOME_DIR='/studentcourses'
 ADD . $HOME_DIR
-ENV MYSQL_USERNAME='directdevops'
-ENV MYSQL_PASSWORD='directdevops'
+ENV MYSQL_USERNAME='devopseasy'
+ENV MYSQL_PASSWORD='devopseasy'
 ENV MYSQL_SERVER='localhost'
 ENV MYSQL_SERVER_PORT='3306'
 ENV MYSQL_DATABASE='test'
