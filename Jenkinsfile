@@ -3,7 +3,7 @@ pipeline{
         label "jenkins-agent"
     }
     environment {
-        APP_NAME = "cultigestapp"
+        APP_NAME = "studentapp"
         RELEASE = "1.0.0"
         DOCKER_USER = "devopseasy"
         DOCKER_PASS = 'dockerhub'
