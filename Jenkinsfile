@@ -1,7 +1,5 @@
 pipeline{
-    agent{
-        label "jenkins-agent"
-    }
+    agent any
     environment {
         APP_NAME = "studentapp"
         RELEASE = "1.0.0"
