@@ -2,8 +2,8 @@ pipeline{
     agent any
     environment {
         APP_NAME = "studentapp"
-        RELEASE = "1.0.0"
-        DOCKER_USER = "devopseasy"
+        RELEASE = "v1-1"
+        DOCKER_USER = "amithps"
         DOCKER_PASS = 'dockerhub'
         IMAGE_NAME = "${DOCKER_USER}" + "/" + "${APP_NAME}"
         IMAGE_TAG = "${RELEASE}-${BUILD_NUMBER}"
@@ -19,7 +19,7 @@ pipeline{
     
         stage("Checkout from SCM"){
             steps {
-                git branch: 'main', credentialsId: 'github', url: 'https://github.com/devops-easy/StudentCourses.git'
+                git branch: 'main', credentialsId: 'github', url: 'https://github.com/amithps/StudentCourses.git'
             }
 
         }
